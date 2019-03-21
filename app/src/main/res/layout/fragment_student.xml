@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listView_student"
+        android:layout_width="0dp"
+        android:layout_height="451dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tw_count_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_number" />
+
+    <TextView
+        android:id="@+id/table_number"
+        android:layout_width="115dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:paddingBottom="0dp"
+        android:text="NUMBER"
+        android:textColor="#F05742"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/table_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/table_name"
+        android:layout_width="135dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="NAME"
+        android:textColor="#F05742"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/table_number"
+        app:layout_constraintEnd_toStartOf="@+id/table_level"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/table_number" />
+
+    <TextView
+        android:id="@+id/table_level"
+        android:layout_width="55dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="LEVEL"
+        android:textColor="#F05742"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/table_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/table_name"
+        app:layout_constraintTop_toTopOf="@+id/table_name" />
+
+    <TextView
+        android:id="@+id/tw_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|start"
+        android:text=" 0"
+        android:textColor="#F05742"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tw_count_name"
+        app:layout_constraintStart_toEndOf="@+id/tw_count_name"
+        app:layout_constraintTop_toTopOf="@+id/tw_count_name" />
+
+    <TextView
+        android:id="@+id/tw_count_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="TOTAL : "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_send" />
+
+    <TextView
+        android:id="@+id/textView_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/table_level"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/table_level"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="32dp"
+        android:background="#009a9a"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:onClick="send"
+        android:text="Send"
+
+        android:textColor="#d9e5f3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tw_count_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tw_count_name" />
+
+</android.support.constraint.ConstraintLayout>

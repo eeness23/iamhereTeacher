@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/nav_home"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/nav_student"
+        android:icon="@drawable/ic_toc_black_24dp"
+        android:title="@string/nav_student"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/nav_profil"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="@string/nav_profil"
+        app:showAsAction="ifRoom|withText" />
+</menu>
